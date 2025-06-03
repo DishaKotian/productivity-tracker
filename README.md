@@ -1,4 +1,11 @@
 # 📝 Real-Time Collaborative Document Editor — Official YapZone
+**COMPANY:** CODTECH IT SOLUTIONS  
+**NAME:** DISHA J KOTIAN  
+**INTERN ID:** CT04DN1299  
+**DOMAIN:** FULL STACK WEB DEVELOPMENT  
+**DURATION:** 4 WEEEKS  
+**MENTOR:** NEELA SANTOSH
+
 
 > A real-time collaborative document editing web app inspired by Google Docs, built with modern full-stack technologies.
 
