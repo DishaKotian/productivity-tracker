@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    body {
+      width: 350px;
+      padding: 20px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      margin: 0;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .stats {
+      display: grid;
+      gap: 12px;
+    }
+    .stat-card {
+      background: #f8f9fa;
+      padding: 12px;
+      border-radius: 8px;
+      border-left: 4px solid #007bff;
+    }
+    .stat-card.productive {
+      border-left-color: #28a745;
+    }
+    .stat-card.unproductive {
+      border-left-color: #dc3545;
+    }
+    .stat-label {
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 4px;
+    }
+    .stat-value {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+    .current-site {
+      background: #e3f2fd;
+      padding: 12px;
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+    .site-name {
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+    .site-category {
+      font-size: 12px;
+      padding: 2px 8px;
+      border-radius: 12px;
+      display: inline-block;
+    }
+    .productive-tag {
+      background: #d4edda;
+      color: #155724;
+    }
+    .unproductive-tag {
+      background: #f8d7da;
+      color: #721c24;
+    }
+    .neutral-tag {
+      background: #e2e3e5;
+      color: #383d41;
+    }
+    .dashboard-btn {
+      width: 100%;
+      padding: 10px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 16px;
+      font-size: 14px;
+    }
+    .dashboard-btn:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h2>Productivity Tracker</h2>
+  </div>
+  
+  <div id="current-site" class="current-site">
+    <div class="site-name" id="site-name">Loading...</div>
+    <span class="site-category" id="site-category">-</span>
+  </div>
+
+  <div class="stats">
+    <div class="stat-card">
+      <div class="stat-label">Today's Total Time</div>
+      <div class="stat-value" id="total-time">0h 0m</div>
+    </div>
+    <div class="stat-card productive">
+      <div class="stat-label">Productive Time</div>
+      <div class="stat-value" id="productive-time">0h 0m</div>
+    </div>
+    <div class="stat-card unproductive">
+      <div class="stat-label">Unproductive Time</div>
+      <div class="stat-value" id="unproductive-time">0h 0m</div>
+    </div>
+  </div>
+
+  <button class="dashboard-btn" id="dashboard-btn">Open Dashboard</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>
